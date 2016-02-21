@@ -75,55 +75,44 @@
  * @see template_process()
  */
 ?>
+<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+	<div class="row">
+		<div class="large-7 columns album-cover">
+			<h1<?php print $title_attributes; ?>><?php print $title; ?></h1>		
+		</div>	
+		<div class="large-5 columns spotify-embed">
+			<?php if (!empty($node->field_amazon)): ?>
+				<div class="small-4 columns">
+					<a href="<?php print $node->field_amazon[LANGUAGE_NONE][0]['url']; ?>" target="_blank" class="amazon">Amazon</a>						
+				</div>	
+			<?php endif; ?>	
+			<?php if (!empty($node->field_google_play)): ?>
+				<div class="small-4 columns">
+					<a href="<?php print $node->field_google_play[LANGUAGE_NONE][0]['url']; ?>" target="_blank" class="google-play">Google Play</a>						
+				</div>	
+			<?php endif; ?>	
+			<?php if (!empty($node->field_itunes)): ?>
+				<div class="small-4 columns">
+					<a href="<?php print $node->field_itunes[LANGUAGE_NONE][0]['url']; ?>" target="_blank" class="itunes">iTunes</a>						
+				</div>	
+			<?php endif; ?>														
+		</div>
+		<div class="large-12 columns">
+			<br>
+			<p><?php print $node->body[LANGUAGE_NONE][0]['value']; ?></p>
+			<br>
+		</div>			
+		<div class="large-7 columns">
+			<img src="<?php print file_create_url($node->field_cd_cover[LANGUAGE_NONE][0]['uri']); ?>">
+		</div>		
+		<div class="large-5 columns">
+			<?php print $node->field_spotify_embed[LANGUAGE_NONE][0]['value']; ?>
+		</div>					
+	</div>
+	
+	
+	
+	<?php //print_r($node); ?>
 
-	<?php dsm($node); ?>
-<div id="node-<?php print $node->nid; ?>" class="large-12 columns"<?php print $attributes; ?>>
 
-  <h1><?php print $title; ?></h1>
-
-</div>
-<div class="large-12 columns">
-	<?php print render($content['body']);?>
-</div>	
-<div class="large-6 columns">
-	<div class="purchase-cds">
-		<?php 	
-			$google = $node->field_google_play[LANGUAGE_NONE][0]['url'];
-			$amazon = $node->field_amazon[LANGUAGE_NONE][0]['url'];
-			$itunes = $node->field_itunes[LANGUAGE_NONE][0]['url'];
-			$spotify = $node->field_spotify[LANGUAGE_NONE][0]['url'];
-		?>	
-		<?php if ($google) : ?>
-		  <a href="<?php print $google; ?>" class="google-play">
-		    Google Play
-		  </a>
-		<?php endif; ?>		
-		<?php if ($amazon) : ?>
-		  <a href="<?php print $amazon; ?>" class="amazon">
-		    Amazon
-		  </a>
-		<?php endif; ?>
-		<?php if ($itunes) : ?>
-		  <a href="<?php print $itunes; ?>" class="itunes">
-		    iTunes
-		  </a>
-		<?php endif; ?>		
-		<?php if ($spotify) : ?>
-		  <a href="<?php print $spotify; ?>" class="spotify hide-for-small">
-		    Spotify
-		  </a>
-		<?php endif; ?>					
-	</div>		
-	<img src="<?php 
-	  $url = file_create_url($node->field_cd_cover['und'][0]['uri']);
-	  $url = parse_url($url);
-	  $path = $url['path'];
-	print $path; ?>">	
-</div>	
-<div class="large-6 columns">
-	<div class="spotify-play">
-		<?php if ($node->field_spotify_embed[LANGUAGE_NONE][0]['value']):
-		    echo $node->field_spotify_embed[LANGUAGE_NONE][0]['value'];
-		endif; ?>	
-	</div>		
-</div>
+</article>
