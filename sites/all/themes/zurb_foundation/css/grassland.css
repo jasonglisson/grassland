@@ -28,12 +28,6 @@ body main {
   height: 100%; }
 
 /* Logo */
-.mobile-logo {
-  width: 105px; }
-
-.mobile-large-logo {
-  margin-bottom: 25px; }
-
 a[rel~="home"] {
   margin: 0 auto;
   display: block;
@@ -319,23 +313,6 @@ body.overflow {
 .front .block-views-playlist-block {
   margin-left: 40px; }
 
-.mobile-signup {
-  width: 350px;
-  padding: 80px 30px 40px 30px;
-  background: url(../images/mobile-signup.png) no-repeat;
-  margin-left: -27px;
-  margin-bottom: 25px; }
-  .mobile-signup .form-item {
-    margin: 0; }
-  .mobile-signup .button {
-    padding: 10px 15px;
-    background: #ca706c;
-    color: #E0E0E0;
-    font-size: 0.86rem;
-    border-radius: 8px;
-    transition: .5s all;
-    width: 100%; }
-
 /* Shows */
 .section-shows table {
   width: 100%; }
@@ -540,20 +517,19 @@ body.node-type-video #page-title {
 .node-type-cds h1 {
   font-family: 'Carnevalee';
   color: #666;
+  margin-top: 17px;
   font-size: 3rem;
-  margin-bottom: 25px;
-  border-bottom: 1px solid #AFAFAF;
-  text-align: center; }
+  margin-bottom: 0;
+  border-bottom: 1px solid #AFAFAF; }
 
-.node-type-cds .amazon, .node-type-cds .google-play, .node-type-cds .itunes, .node-type-cds .spotify {
+.node-type-cds .amazon, .node-type-cds .google-play, .node-type-cds .itunes {
   display: block;
   height: 100px;
   width: 75px;
-  margin-right: 15px;
+  margin: 0 auto;
   font-size: 12px;
   text-align: center;
-  padding-right: 5px;
-  float: left; }
+  padding-right: 5px; }
 
 .node-type-cds .amazon {
   background: url(../images/cd-icons.png) -149px 0px no-repeat; }
@@ -563,9 +539,6 @@ body.node-type-video #page-title {
 
 .node-type-cds .itunes {
   background: url(../images/cd-icons.png) -24px 0px no-repeat; }
-
-.node-type-cds .spotify {
-  background: url(../images/cd-icons.png) -403px 0px no-repeat; }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
   .l-main {
@@ -886,7 +859,7 @@ body.node-type-video #page-title {
   .menu-tag {
     color: #fff;
     padding-bottom: 8px;
-    padding-left: 12px; }
+    text-align: center; }
   .l-main {
     padding-top: 50px;
     padding-bottom: 40px;
