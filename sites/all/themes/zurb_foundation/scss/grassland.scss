@@ -897,10 +897,13 @@ body.node-type-video #page-title {
     /* phones */
     .post-menu {
     	height: 96px;	  
-		.small-9 a {
-		    padding-top: 11px;
+			.small-9 a {
+		    padding-top: 6px;
 		    display: block;
-		}    	  
+		    img {
+			    height:50px;
+		    }
+			}    	  
     }
    
 	.menu-tag {

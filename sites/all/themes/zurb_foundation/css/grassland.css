@@ -854,8 +854,10 @@ body.node-type-video #page-title {
   .post-menu {
     height: 96px; }
     .post-menu .small-9 a {
-      padding-top: 11px;
+      padding-top: 6px;
       display: block; }
+      .post-menu .small-9 a img {
+        height: 50px; }
   .menu-tag {
     color: #fff;
     padding-bottom: 8px;
