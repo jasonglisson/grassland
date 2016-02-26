@@ -192,7 +192,7 @@
         <div id="above-footer" class="large-12 columns">
           <?php print render($page['above_footer']); ?>
         </div>
-        <div class="large-12 columns hide-for-large">
+        <div class="large-12 columns show-for-small-only">
 	        <div class="mobile-signup">
 						<?php
 						$block = module_invoke('webform','block_view','client-block-15');
