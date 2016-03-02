@@ -140,8 +140,9 @@
     <!--/.l-help -->
   <?php endif; ?>
 
-  <main role="main" class="row l-main">
 	  <img src="../sites/all/themes/zurb_foundation/images/logo-mobile-top.png" alt="Grassland Bluegrass Band Virginia" title="Grassland Bluegrass Band" class="mobile-large-logo show-for-small">
+
+  <main role="main" class="row l-main">
     <?php if ($messages && !$zurb_foundation_messages_modal): ?>
     <!--.l-messages -->
     <section class="l-messages row">

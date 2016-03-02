@@ -150,7 +150,7 @@ body.overflow {
   position: fixed;
   margin-bottom: 0;
   height: 75px;
-  background: #545454;
+  background: #769C65;
   top: 60px;
   transition: .5s all;
   padding-top: 30px;
@@ -187,6 +187,9 @@ body.overflow {
       color: #fff;
       font-family: 'Carnevalee';
       text-transform: uppercase; }
+
+.mobile-large-logo {
+  padding: 50px 0px 10px 17px; }
 
 /* Main Area */
 .large-menu #main-menu {
@@ -560,6 +563,8 @@ body.node-type-video #page-title {
   background: url(../images/cd-icons.png) -24px 0px no-repeat; }
 
 @media only screen and (min-width: 300px) and (max-width: 600px) {
+  body {
+    background-size: 273%; }
   .l-main {
     margin-top: 100px; }
     .l-main .main {
