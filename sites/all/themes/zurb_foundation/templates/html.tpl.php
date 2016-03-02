@@ -56,6 +56,7 @@
   <?php endif; ?>		
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <meta name="theme-color" content="#769C65">
   <meta property="fb:app_id" content="1656788204576474" />   
   <meta property="og:image" content="http://grasslandbluegrassband.com/<?php print drupal_get_path('theme',$GLOBALS['theme']) ?>/images/fb-share.jpg"/>
   <meta property="og:type" content="website" /> 
