@@ -307,6 +307,25 @@ body.overflow {
     .front .block-views-show-date-block-block .views-field-view-node a:hover {
       opacity: .8; }
 
+.mobile-signup {
+  width: 350px;
+  padding: 80px 30px 40px 30px;
+  background: url(../images/mobile-signup.png) no-repeat;
+  margin-left: -27px;
+  margin-bottom: 25px; }
+
+.mobile-signup .form-item {
+  margin: 0; }
+
+.mobile-signup .button {
+  padding: 10px 15px;
+  background: #ca706c;
+  color: #E0E0E0;
+  font-size: 0.86rem;
+  border-radius: 8px;
+  transition: .5s all;
+  width: 100%; }
+
 #front-pic {
   padding: 0 0 0 52px; }
 
