@@ -101,6 +101,7 @@
 <div class="large-5 columns">
 	<h4>Date & Time</h4>
 	<h5><?php $date = $node->field_show_date[$node->language][0]['value']; 
+		print $date;
 		$newDate = date("D - m/d/Y", strtotime($date));
 		print $newDate;?> - <?php print $node->field_time[$node->language][0]['value'];?></h5>
 	<h4>Venue</h4>

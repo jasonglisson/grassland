@@ -150,7 +150,12 @@
     </section>
     <!--/.l-messages -->
   <?php endif; ?>
-  	<div class="large-7 columns" id="front-pic"><img src="../sites/all/themes/zurb_foundation/images/front-pic.png" alt="Grassland Bluegrass Band Virginia" title="Grassland Bluegrass Band"></div>
+  	<div class="large-7 columns" id="front-pic">
+	  	<?php
+				$view = views_get_view('nodequeue_homepage_video');
+  			print $view->execute_display('default');
+			?>	
+  	</div>
     <div class="large-5 main columns">
       <?php if (!empty($page['highlighted'])): ?>
         <div class="highlight panel callout">
